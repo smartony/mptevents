@@ -15,8 +15,8 @@ How to Use
 ----------
 
 Just make sure to run this daemon at system startup or when debugging is
-needed, give it the device name to open such as /dev/mptctl or /dev/mpt2ctl or
-/dev/mpt3ctl and it will send syslog messages.
+needed, give it the device name to open such as /dev/mpt2ctl or /dev/mpt3ctl
+and it will send syslog messages.
 
 This daemon will try to auto-detect each supported host in /sys/class/scsi_host.
 Any unsupported host (e.g. ahci) will be ignored.
