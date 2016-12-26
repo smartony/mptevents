@@ -18,6 +18,9 @@ Just make sure to run this daemon at system startup or when debugging is
 needed, give it the device name to open such as /dev/mptctl or /dev/mpt2ctl or
 /dev/mpt3ctl and it will send syslog messages.
 
+This daemon will try to auto-detect each supported host in /sys/class/scsi_host.
+Any unsupported host (e.g. ahci) will be ignored.
+
 If you give it no arguments it will try to auto-detect the control device and
 use that if it finds only one. If more than one is available you'll need to
 decide which one to use.
@@ -71,4 +74,3 @@ Author
 ------
 
 Baruch Even <baruch@ev-en.org>
-Shaoxin Zheng <zhsxcn@gmail.com>
